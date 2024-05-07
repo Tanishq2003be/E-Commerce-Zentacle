@@ -29,13 +29,13 @@ app.use(cookieParser());
 
 app.use(
     cors({
-        origin: "https://e-commerce-zentacle-front.vercel.app/",
+        origin: "https://e-commerce-zentacle-front.vercel.app",
         credentials: true,
     })
 );
 
-// app.use("/", express.static(path.join(__dirname, "./uploads")));
-app.use("/", express.static("uploads"));
+app.use("/", express.static(path.join(__dirname, "./uploads")));
+// app.use("/", express.static("uploads"));
 app.get("/test", (req, res) => {
     res.send("Hello World!");
 });
