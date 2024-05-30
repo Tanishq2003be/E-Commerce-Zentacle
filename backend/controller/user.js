@@ -43,7 +43,7 @@ router.post("/create-user", upload.single("file"), async(req, res, next) => {
 
         const activationToken = createActivationToken(user);
 
-        const activationUrl = `https://e-commerce-zentacle-front.vercel.app/activation/${activationToken}`;
+        const activationUrl = `http://localhost:3000/activation/${activationToken}`;
 
         // send email to user
         try {
@@ -168,8 +168,6 @@ router.get(
             res.cookie("token", null, {
                 expires: new Date(Date.now()),
                 httpOnly: true,
-                sameSite: "none",
-                secure: true,
             });
             res.status(201).json({
                 success: true,

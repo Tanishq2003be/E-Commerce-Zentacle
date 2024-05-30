@@ -58,14 +58,11 @@ const Header = ({ activeHeading }) => {
     <>
       <div className={`${styles.section}`}>
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center  justify-between ">
-          <div>
-            <Link to="/">
-              <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-                alt=""
-              />
-            </Link>
-          </div>
+        <div>
+  <Link to="/" style={{ fontFamily: 'Sacramento, cursive', fontSize: '24px', textDecoration: 'none', color: 'black' }}>
+    Z E N T A C L E
+  </Link>
+</div>
           {/*Search box  */}
           <div className="w-[50%] relative">
             <input
@@ -73,7 +70,7 @@ const Header = ({ activeHeading }) => {
               placeholder="Search for product..."
               value={searchTerm}
               onChange={handleSearchChange}
-              className="h-[40px] w-full px-2 border-[#3957db] border-[2px] rounded-md"
+              className="h-[40px] w-full px-2 border-[#3957db] border-[2px] rounded-full"
             />
             <AiOutlineSearch
               size={30}
@@ -232,13 +229,9 @@ const Header = ({ activeHeading }) => {
             />
           </div>
           <div>
-            <Link to="/">
-              <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-                alt=""
-                className="mt-3 cursor-pointer"
-              />
-            </Link>
+          <Link to="/" style={{ fontFamily: 'Sacramento, cursive', fontSize: '24px', textDecoration: 'none', color: 'black' }}>
+    Z E N T A C L E
+  </Link>
           </div>
 
           <div>
@@ -289,7 +282,7 @@ const Header = ({ activeHeading }) => {
               <input
                 type="search"
                 placeholder="Search for products"
-                className="h-[40px] w-full px-2 border-[#3957db] border-[2px] rounded-md"
+                className="h-[40px] w-full px-2 border-[#3957db] border-[2px] rounded-full"
                 value={searchTerm}
                 onChange={handleSearchChange}
               />
