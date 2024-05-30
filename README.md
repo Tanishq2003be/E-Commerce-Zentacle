@@ -37,7 +37,7 @@ STRIPE_API_KEY =
 STRIPE_SECRET_KEY =
 ```
 
-- `yarn start`
+- `npm run dev`
 
 ### How to run socket
 
@@ -49,4 +49,4 @@ STRIPE_SECRET_KEY =
 PORT = 4000
 ```
 
-- `yarn start`
+- `npm start`
