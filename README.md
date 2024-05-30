@@ -12,8 +12,8 @@ This project does not have a mongoDB connection setup. Set up the connection bas
 ### How to run frontend
 
 - `cd frontend`
-- `yarn install`
-- `yarn start`
+- `npm install`
+- `npm start`
 
 ### How to run backend
 
